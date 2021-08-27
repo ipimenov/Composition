@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".presentation.ChooseLevelFragment">
+
+    <TextView
+        android:id="@+id/tv_title_level"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/choose_level_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_level_test"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/choose_level_test"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_level" />
+
+    <Button
+        android:id="@+id/button_level_easy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="@string/choose_level_easy"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/button_level_test"
+        app:layout_constraintStart_toStartOf="@+id/button_level_test"
+        app:layout_constraintTop_toBottomOf="@+id/button_level_test" />
+
+    <Button
+        android:id="@+id/button_level_normal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="@string/choose_level_normal"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/button_level_easy"
+        app:layout_constraintStart_toStartOf="@+id/button_level_easy"
+        app:layout_constraintTop_toBottomOf="@+id/button_level_easy" />
+
+    <Button
+        android:id="@+id/button_level_hard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="@string/choose_level_hard"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/button_level_normal"
+        app:layout_constraintStart_toStartOf="@+id/button_level_normal"
+        app:layout_constraintTop_toBottomOf="@+id/button_level_normal" />
+</androidx.constraintlayout.widget.ConstraintLayout>
